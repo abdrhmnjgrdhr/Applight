@@ -1,0 +1,224 @@
+p{
+    color: gray;
+    font-size: 18px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+
+.hero{
+    background: rgb(204,162,250);
+    background: linear-gradient(90deg, rgba(204,162,250,1) 0%, rgba(172,139,252,1) 53%, rgba(130,104,254,1) 100%);
+    height: auto;
+    width: 100vw;
+    padding-bottom: 50px;
+    
+}
+/* NAV-BAR */
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
+    position: relative;
+   
+   
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    transition: all 0.5s;
+}
+.nav-links :hover{
+    color: #5f0099;
+}
+.nav-links a {
+
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (min-width:769px){
+    .bar-btn{
+        display: none;
+    }
+}
+@media screen and (max-width:769px){
+    .nav-links{
+        display: none;
+    }
+}
+
+/* SIDE-NAV-BAR */
+
+.side-nav{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    margin-top: -300%;
+    transition: all 1s;
+}
+.side-nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+    
+}
+.side-nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}
+
+.hero-1{
+    padding-top: 20px;
+}
+.hero-1 h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+
+.hero-1 p{
+    color: white;
+}
+.stores img{
+     height: 50px;
+     width: 150px;
+}
+.stores{
+    gap: 10px;
+}
+
+.ring{
+    background: rgb(204,162,250);
+    background: linear-gradient(90deg, rgba(204,162,250,1) 0%, rgba(172,139,252,1) 53%, rgba(130,104,254,1) 100%);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.button button{
+    padding: 10px 20px;
+    color: #5f0099;
+    border: #5f0099 2px solid;
+    
+}
+
+.whole-watch{
+    background: url(./images/watch.png);
+    width: 100%;
+    height: 300px;background-position: center;
+    background-size:cover ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.play{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+
+.overlay {
+    height: 100%;
+    background: rgba(204,162,250,);
+    background: linear-gradient(90deg, rgba(204,162,250,0.6) 0%, rgba(172,139,252,0.6) 53%, rgba(130,104,254,0.6) 100%);
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    color: rgb(204, 162, 250);
+    color: linear-gradient(
+      90deg,
+      rgba(204, 162, 250, 1) 0%,
+      rgba(172, 139, 252, 1) 53%,
+      rgba(130, 104, 254, 1) 100%
+    )
+}
+
+.line span {
+      width: 50px;
+      height: 4px;
+      background-color: rgb(204, 162, 250);
+      color: linear-gradient(
+        90deg,
+        rgba(204, 162, 250, 1) 0%,
+        rgba(172, 139, 252, 1) 53%,
+        rgba(130, 104, 254, 1) 100%
+      )  
+}
+.gap{
+    padding-bottom: 100px;
+}
+
+.img{
+    height: 250px;
+    width: 250px;
+}
+.name, .mail, .class, .mesg{
+    border: grey 1px solid;
+}
+.btn-btn{
+    border: none;
+    background: rgb(204,162,250);
+    background: linear-gradient(90deg, rgba(204,162,250,1) 0%, rgba(172,139,252,1) 53%, rgba(130,104,254,1) 100%);
+}
+.info{
+    border: none;
+    background: rgb(204,162,250);
+    background: linear-gradient(90deg, rgba(204,162,250,1) 0%, rgba(172,139,252,1) 53%, rgba(130,104,254,1) 100%);
+}
+footer{
+    border: none;
+    background: rgb(204,162,250);
+    background: linear-gradient(90deg, rgba(204,162,250,1) 0%, rgba(172,139,252,1) 53%, rgba(130,104,254,1) 100%);
+    color: white;
+}
+footer .line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    color: #5f0099;
+}
+
+footer .line span {
+      width: 50px;
+      height: 4px;
+      background-color: #5f0099;
+      
+}
+
+.button button:hover{
+    background: rgb(204,162,250);
+    background: linear-gradient(90deg, rgba(204,162,250,1) 0%, rgba(172,139,252,1) 53%, rgba(130,104,254,1) 100%);
+    
+}
+.whole-watch .play:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+form button:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
